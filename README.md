@@ -24,6 +24,7 @@ Each ISR page has a `revalidate` period. When a page is accessed after its reval
 1. Next.js regenerates the page
 2. A request is logged to Supabase with the type (read/write/function) and page name
 3. The statistics are updated and visible on the home page and stats dashboard
+4. eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imd0Z2ZkZGx5bHlnZGhudm5wdXR2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjYzODUzOTQsImV4cCI6MjA4MTk2MTM5NH0.EvgkVhVUBwrp9QIAH5huus7sjpTswkRfjJFlB0O55LQ
 
 ## Database Schema
 
@@ -57,6 +58,7 @@ CREATE TABLE isr_requests (
    ```
 
 4. Open [http://localhost:3000](http://localhost:3000)
+5. https://gtgfddlylygdhnvnputv.supabase.co
 
 ## Testing ISR
 
@@ -83,3 +85,7 @@ CREATE TABLE isr_requests (
 - Stats: 5 seconds (fastest updates)
 
 This allows you to see different regeneration frequencies and how they affect request tracking.
+
+
+NEXT_PUBLIC_SUPABASE_URL
+NEXT_PUBLIC_SUPABASE_ANON_KEY
